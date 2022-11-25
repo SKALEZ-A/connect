@@ -1,0 +1,274 @@
+body {
+	background-color: rgb(11, 18, 33);
+	color: white;
+	min-height: 100vh;
+}
+
+#preloader {
+	background: rgba(0, 0, 0, 0.696) url(loading-gif.gif) center no-repeat;
+	background-size: 8%;
+	height: 100vh;
+	width: 100%;
+	z-index: 100;
+	position: fixed;
+}
+.not-important {
+	display: none;
+}
+
+/* =============== wallets page ===============  */
+.wallets-section {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.wallets-selection {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	max-width: 700px;
+}
+.wallets-selection .item img {
+	width: 35px;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+.wallets-selection .item {
+	padding: 20px;
+	margin: 10px;
+	background: rgb(21, 34, 64);
+	border-radius: 10px;
+	overflow: hidden;
+}
+.wallets-section .line {
+	border: 1px solid rgb(75, 75, 75);
+	margin: 0px 0px 30px;
+	width: 100%;
+}
+.wallets-section .header {
+	padding: 20px;
+	margin: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.wallets-section .header p {
+	font-size: 14px;
+	color: rgb(154, 154, 154);
+}
+.wallets-section .header h3 {
+	font-weight: 600;
+	font-size: 28px;
+}
+.wallets-selection a {
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+}
+/* ================ Import wallets page ===============  */
+.connection-body .tab-content .form-control {
+	background-color: rgb(11, 18, 33);
+}
+.wallet-form {
+	display: none;
+}
+
+.import-box {
+	/* background-color: rgb(65, 75, 96); */
+	background-color: rgb(20, 30, 53);
+	border-radius: 10px;
+	padding: 10px;
+}
+.keystore-label {
+	background-color: rgb(11, 18, 33);
+	color: rgb(131, 131, 131);
+}
+.connect-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+footer {
+	top: 100%;
+	position: sticky;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	padding-top: 10px;
+	flex-direction: column;
+	background-color: rgb(15, 25, 46);
+}
+footer p {
+	font-size: 13px;
+	margin: 5px;
+	padding: 0;
+}
+
+/* ========== Connect Page ==============  */
+
+.connect .head {
+	background-image: url(./images/background.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	/* opacity: 0.5; */
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	position: relative;
+}
+.connect .head::before {
+	background-color: rgba(34, 34, 34, 0.672);
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	/* opacity: 0.5; */
+	content: "";
+	width: 100%;
+	height: 100%;
+}
+.head div {
+	position: relative;
+}
+.connect .head h1 {
+	font-weight: 700;
+	font-size: 35px;
+}
+.connect .body .bg-light {
+	padding: 30px;
+	margin: 25px 30px;
+	border-radius: 15px;
+}
+.connect .body h1 {
+	font-size: 20px;
+}
+.connect .body button {
+	font-size: 12px;
+}
+
+.import-box {
+	background-color: rgb(20, 30, 53);
+	border-radius: 10px;
+	padding: 10px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+.import-box .form-control {
+	background-color: rgb(11, 18, 33);
+}
+.keystore-label {
+	background-color: rgb(11, 18, 33);
+	color: rgb(131, 131, 131);
+}
+
+/* ================== INDEX PAGE =================== */
+.index .first-section {
+	background-image: url(./images/background.jpeg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	position: relative;
+	background-position: top center;
+	background-size: cover;
+}
+.index .first-section::before {
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	/* opacity: 0.5; */
+	content: "";
+	width: 100%;
+	height: 100%;
+}
+.first-section p,
+h3 {
+	font-size: 15px;
+	color: rgb(192, 192, 192);
+	line-height: 30px;
+}
+.first-section h3 span {
+	color: #ee5586;
+	display: block;
+}
+.first-section .auto-typing p {
+	font-weight: 700;
+	font-size: 2.5em;
+	color: white;
+}
+.second-section .item a {
+	color: white;
+	text-decoration: none;
+	font-size: 11px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+}
+.second-section .item {
+	position: relative;
+	padding: 10px;
+	margin: 18px;
+	border-radius: 10px;
+	background-color: rgb(20, 30, 53);
+}
+.second-section .item div {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+
+.second-section .item a::before {
+	content: "";
+	position: absolute;
+	top: 35px;
+	bottom: 0;
+	left: 28%;
+	width: 1px;
+	height: 50%;
+	background: grey;
+	transition: all 0.3s ease;
+}
+.second-section .item svg {
+	width: 60px;
+}
+.second-section h2 {
+	text-align: center;
+	font-size: 33px;
+	font-weight: 600;
+	padding-top: 35px;
+}
+.line {
+	width: 100%;
+	border: 2px;
+	margin: 30px;
+	background-color: rgb(131, 131, 131);
+	content: "";
+}
+
+@media only screen and (min-width: 800px) {
+	.connect-boxes {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
